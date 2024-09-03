@@ -19,6 +19,7 @@ st.set_page_config(
 
 #st.title('Welcome! This is Ran Tu')
 
+###title
 st.markdown("# Welcome to the world of TreesLab*")
 st.markdown("### Technical and Strategical Solutions to Transport Decarbonization")
 st.markdown('##### *"Trees" stands for: Transportation, Environment, Economy, Sustainability')
@@ -44,16 +45,18 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+#news
+st.markdown('Recent news')
 col1, col2 = st.columns(2)
 
 with col1:
-    st.header("Column 1")
-    st.write("This is column 1")
+    st.header("Taking a breath and a half-year break at UofT")
+    st.write("Starting from Aug 16, I will be visiting the Department of Chemical Engineering and Applied Chemistry at the University of Toronto. Hopefully, this visiting will bring much new ideas on the travel-related environmental and social impact and mitigation practices from a different perspective")
 
 with col2:
     st.header("Column 2")
     st.write("This is column 2")
-    
+
 #st.sidebar.header('Dictionary')
 
 #if st.sidebar.button('Return to home'):
