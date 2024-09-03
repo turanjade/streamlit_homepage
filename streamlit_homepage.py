@@ -58,9 +58,9 @@ st.write(pages[page]["content"])
 
 if pages == "Home":
     ###title
-    st.markdown("# Welcome to the world of TreesLab*")
-    st.markdown("### Technical and Strategical Solutions to Transport Decarbonization")
-    st.markdown('##### *"Trees" stands for: Transportation, Environment, Economy, Sustainability')
+    st.write("# Welcome to the world of TreesLab*")
+    st.write("### Technical and Strategical Solutions to Transport Decarbonization")
+    st.write('##### *"Trees" stands for: Transportation, Environment, Economy, Sustainability')
     st.markdown("---")  # Horizontal line
 
     ##customize background and text color
