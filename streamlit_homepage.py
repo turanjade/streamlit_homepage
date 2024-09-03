@@ -14,7 +14,7 @@ url_INS = "https://www.instagram.com/tr_jade/"
 
 st.set_page_config(
     page_title="Welcome to Ran Tu's Homepage",
-    page_icon=":rocket:",  # You can use an emoji or a local image path
+    page_icon=":car:",  # You can use an emoji or a local image path
     layout="wide",         # "centered" or "wide"
     #initial_sidebar_state="collapsed",  # "expanded" or "collapsed"
 )
