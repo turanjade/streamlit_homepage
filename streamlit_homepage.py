@@ -118,7 +118,7 @@ elif page == 'Supervision & Mentorship':
 
     st.write('(2023) Chenming Niu')
     st.caption("**(Updated 2024) Congraduations to Chenming for graduating from the UCB and starting a new journal at HKU for his PHD!**")
-    st.caption("**(Updated 2024) also, check out our latest publication on E-bus resource allocation @[link](%s)**" % "https://doi.org/10.1016/j.multra.2024.100165"")
+    st.caption("**(Updated 2024) also, check out our latest publication on E-bus resource allocation @[link](%s)**" % "https://doi.org/10.1016/j.multra.2024.100165")
     st.write('(2023) Shiyu Zhao')
     st.caption("**Congraduations to Shiyu for entering the Univeristy of British Columbia! Fingers crossed!**")
     st.write("(2022) Qiuzi Chen")
