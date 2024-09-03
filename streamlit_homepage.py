@@ -17,6 +17,32 @@ st.set_page_config(
     #initial_sidebar_state="collapsed",  # "expanded" or "collapsed"
 )
 
+# Define a function to include custom JavaScript
+def include_javascript():
+    st.markdown(
+        """
+        <script>
+        // Function to automatically expand all Streamlit expanders
+        function expandAllExpanders() {
+            var expanders = document.querySelectorAll('.stExpander');
+            expanders.forEach(function(expander) {
+                var header = expander.querySelector('.stExpanderHeader');
+                if (header) {
+                    header.click(); // Simulate a click to expand the expander
+                }
+            });
+        }
+        // Call the function to expand all expanders after the page loads
+        window.onload = expandAllExpanders;
+        </script>
+        """,
+        unsafe_allow_html=True
+    )
+
+# Add the custom JavaScript to the Streamlit app
+include_javascript()
+
+
 pages = {
     "Home": {
         "title": "Welcome to the world of TreesLab*",
