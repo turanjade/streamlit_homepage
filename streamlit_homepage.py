@@ -49,7 +49,8 @@ pages = {
 }
 # Sidebar for navigation
 st.sidebar.title("Navigation")
-page = st.sidebar.selectbox("Select a page", options=list(pages.keys()))
+page = st.sidebar.radio("Direct to:",
+     ('Home', 'Education', 'Work', 'Projects', 'Showcases', 'Supervision & Mentorship', 'Publication')))
 
 # Display the selected page content
 st.title(pages[page]["title"])
