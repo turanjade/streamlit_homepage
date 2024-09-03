@@ -50,7 +50,7 @@ pages = {
 # Sidebar for navigation
 st.sidebar.title("Navigation")
 page = st.sidebar.radio("Direct to:",
-     ('Home', 'Education', 'Work', 'Projects', 'Showcases', 'Supervision & Mentorship', 'Publication')))
+     ('Home', 'Education', 'Work', 'Projects', 'Showcases', 'Supervision & Mentorship', 'Publication'))
 
 # Display the selected page content
 st.title(pages[page]["title"])
