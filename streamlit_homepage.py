@@ -151,24 +151,24 @@ elif page == 'Publications':
 #     ('Home', 'Education', 'Working experience', 'Projects', 'Teaching', 'Studnets', 'Publication'))
 
 
-""""
+#
 ##customize background and text color
-st.markdown(
-    """
-    <style>
-    body {
-        background-color: #eff5e4;
-        color: #333333;
-    }
-    .stTextInput {
-        color: #4CAF50;
-    }
-    .stButton > button {
-        background-color: #4CAF50;
-        color: white;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+#st.markdown(
+#    """
+#    <style>
+#    body {
+#        background-color: #eff5e4;
+#        color: #333333;
+#    }
+#    .stTextInput {
+#        color: #4CAF50;
+#    }
+#    .stButton > button {
+#        background-color: #4CAF50;
+#        color: white;
+#    }
+#    </style>
+#    """,
+#    unsafe_allow_html=True
+#)
 """"
