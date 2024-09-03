@@ -20,43 +20,7 @@ st.set_page_config(
 pages = {
     "Home": {
         "title": "Welcome to the Home Page",
-        st.markdown("# Welcome to the world of TreesLab*")
-        st.markdown("### Technical and Strategical Solutions to Transport Decarbonization")
-        st.markdown('##### *"Trees" stands for: Transportation, Environment, Economy, Sustainability')
-        st.markdown("---")  # Horizontal line
-
-        ##customize background and text color
-        st.markdown(
-            """
-            <style>
-            body {
-                background-color: #eff5e4;
-                color: #333333;
-            }
-            .stTextInput {
-                color: #4CAF50;
-            }
-            .stButton > button {
-                background-color: #4CAF50;
-                color: white;
-            }
-            </style>
-            """,
-            unsafe_allow_html=True
-        )
-
-        #news
-        st.markdown('Recent news')
-        col1, col2 = st.columns(2)
-
-        with col1:
-            st.header("Taking a breath and a half-year break at UofT (Aug-16-2024)")
-            st.write("Starting from Aug 16, I will be visiting the Department of Chemical Engineering and Applied Chemistry at the University of Toronto. Hopefully, this visiting will bring much new ideas on the travel-related environmental and social impact and mitigation practices from a different perspective")
-
-        with col2:
-            st.header("An in-depth communication with Austria-based NGO IIASA (Jul-17-2024)")
-            st.write("Sponsored by the NSFC-funded international collaboration project, Decarbonization of Residents Life Behavior, we traveled to Vienna, Austria, and had a talk at the IIASA. MaaS business, travelers' behavior analysis, and influencing factors were discussed.")
-
+        #"content": "This is the home page of the app. Here, you can find an overview of what this app offers."
     },
     "Work": {
         "title": "Work Experiences",
