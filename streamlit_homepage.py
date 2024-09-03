@@ -64,7 +64,7 @@ if page == "Home":
     #st.write("Welcome to the world of TreesLab*")
     st.markdown("### Technical and Strategical Solutions to Transport Decarbonization")
     st.markdown('##### *"Trees" stands for: Transportation, Environment, Economy, Sustainability')
-    st.caption('Check out my social media at: [LinkedIn](%s), or [Instagram](%s)" % (url_LI, url_INS)')
+    st.caption('Check out my social media at: [LinkedIn](%s), or [Instagram](%s)' % (url_LI, url_INS))
     st.markdown("---")  # Horizontal line
 
     #news
