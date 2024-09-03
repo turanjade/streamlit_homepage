@@ -24,13 +24,13 @@ pages = {
         "title": "Welcome to the world of TreesLab*",
         "content": ""
     },
-    "Work": {
-        "title": "Work Experiences",
+    "Lifetime milestons": {
+        "title": "Experiences of work and education",
         "content": ""
     },
-    "Education": {
-        "title": "Education Experiences",
-        "content": ""
+    #"Education": {
+    #    "title": "Education Experiences",
+    #    "content": ""
     },
     "Projects": {
         "title": "Projects",
@@ -89,14 +89,13 @@ if page == "Home":
             st.write("Sponsored by the NSFC-funded international collaboration project, Decarbonization of Residents Life Behavior, we traveled to Vienna, Austria, and had a talk at the IIASA. MaaS business, travelers' behavior analysis, and influencing factors were discussed.")
         with col2:
             st.header("An in-depth communication with Austria-based NGO IIASA (Jul-17-2024)")
-elif page == 'Work':
+elif page == 'Lifetime milestons':
     st.subheader('Working experience')
     st.write('2024.08-current, Visiting Professor, Dept. Chemical Engineering & Applied Chemistry, University of Toronto')
     st.write('2023.01-current, Chief Scientist, Green-Distributor, Suzhou, China')
     st.write('2020.11-current, Associate Professor, School of Transportation, Southeast University')
     st.write('2020.05-2020.10, Postdoctoral Researcher, Dept. Civil & Mineral Engineering, University of Toronto & TD Inc.')
 
-elif page == 'Education':
     st.subheader('Education')
     st.write('2016-2020, PhD, Dept. Civil & Mineral Engineering, University of Toronto')
     st.write(str('   '+ 'Supervisor: Marianne Hatzopoulou'))
