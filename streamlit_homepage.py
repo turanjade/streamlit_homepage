@@ -29,7 +29,7 @@ st.markdown(
     """
     <style>
     body {
-        background-color: #f5f5f5;
+        background-color: #eff5e4;
         color: #333333;
     }
     .stTextInput {
