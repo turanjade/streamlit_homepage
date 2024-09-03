@@ -19,7 +19,7 @@ st.set_page_config(
 
 pages = {
     "Home": {
-        "title": "Welcome to the Home Page",
+        "title": "Welcome to the world of TreesLab*",
         "content": ""
     },
     "Work": {
@@ -59,7 +59,7 @@ st.write(pages[page]["content"])
 
 if page == "Home":
     ###title
-    st.write("Welcome to the world of TreesLab*")
+    #st.write("Welcome to the world of TreesLab*")
     st.markdown("### Technical and Strategical Solutions to Transport Decarbonization")
     st.markdown('##### *"Trees" stands for: Transportation, Environment, Economy, Sustainability')
     st.markdown("---")  # Horizontal line
