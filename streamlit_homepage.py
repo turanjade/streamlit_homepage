@@ -8,6 +8,8 @@ import numpy as np
 
 url_rg = "https://www.researchgate.net/profile/Ran-Tu-3"
 url_gs = 'https://scholar.google.com/citations?user=ueR4KsUAAAAJ&hl=en'
+url_LI = "https://www.linkedin.com/in/ran-tu-jade/"
+url_INS = "https://www.instagram.com/tr_jade/"
 #st.write("check out this [link](%s)" % url)
 
 st.set_page_config(
@@ -62,6 +64,7 @@ if page == "Home":
     #st.write("Welcome to the world of TreesLab*")
     st.markdown("### Technical and Strategical Solutions to Transport Decarbonization")
     st.markdown('##### *"Trees" stands for: Transportation, Environment, Economy, Sustainability')
+    st.caption('Check out my social media at: [LinkedIn](%s), or [Instagram](%s)" % (url_LI, url_INS)')
     st.markdown("---")  # Horizontal line
 
     #news
