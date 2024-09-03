@@ -78,7 +78,7 @@ if page == "Home":
             st.write("Starting from Aug 16, I will be visiting the Department of Chemical Engineering and Applied Chemistry at the University of Toronto. Hopefully, this visiting will bring much new ideas on the travel-related environmental and social impact and mitigation practices from a different perspective")
 
         with col2:
-            st.header("_Heart healing trip to the Northeastern province of China, Heilongjiang (Aug_03_20204)_")
+            st.header("_Heart healing trip to the Northeastern province of China, Heilongjiang (Aug-03-20204)_")
             st.write("An annual breakdown with my beloved friends. This year, we went to Heilongjiang Province, Northeast of China.")
 
     with st.container():
@@ -90,6 +90,7 @@ if page == "Home":
         with col2:
             st.header("_An in-depth communication with Austria-based NGO IIASA (Jul-17-2024)_")
             st.write("Sponsored by the NSFC-funded international collaboration project, Decarbonization of Residents Life Behavior, we traveled to Vienna, Austria, and had a talk at the IIASA. MaaS business, travelers' behavior analysis, and influencing factors were discussed.")
+
 elif page == 'Professional milestons':
     st.subheader('Working experience')
     st.write('2024.08-current, Visiting Professor, Dept. Chemical Engineering & Applied Chemistry, University of Toronto')
