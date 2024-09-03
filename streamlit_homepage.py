@@ -6,82 +6,63 @@ import streamlit as st
 import numpy as np
 
 
-url_rg = "https://www.researchgate.net/profile/Ran-Tu-3"
-url_gs = 'https://scholar.google.com/citations?user=ueR4KsUAAAAJ&hl=en'
+#url_rg = "https://www.researchgate.net/profile/Ran-Tu-3"
+#url_gs = 'https://scholar.google.com/citations?user=ueR4KsUAAAAJ&hl=en'
 #st.write("check out this [link](%s)" % url)
 
 st.set_page_config(
     page_title="Welcome to Ran Tu's Homepage",
     page_icon=":rocket:",  # You can use an emoji or a local image path
     layout="wide",         # "centered" or "wide"
-    initial_sidebar_state="collapsed",  # "expanded" or "collapsed"
+    #initial_sidebar_state="collapsed",  # "expanded" or "collapsed"
 )
 
 pages = {
     "Home": {
         "title": "Welcome to the Home Page",
-        "content": "This is the home page of the app. Here, you can find an overview of what this app offers."
+        "content": ""
     },
     "Work": {
         "title": "Work Experiences",
-        "content": "This page gives you more information about the purpose and creators of this app."
+        "content": ""
     },
     "Education": {
         "title": "Education Experiences",
-        "content": "Here you can find the contact information to reach out to the team."
+        "content": ""
     },
     "Projects": {
         "title": "Projects",
-        "content": "Explore detailed data and insights on this page."
+        "content": ""
     },
     "Showcases": {
         "title": "Case studies",
-        "content": "Explore detailed data and insights on this page."
+        "content": ""
     },
     "Supervision & Mentorship": {
         "title": "My students",
-        "content": "Explore detailed data and insights on this page."
+        "content": ""
     },
     "Publications": {
         "title": "Peer-reviewed journal & conference articles",
-        "content": "Explore detailed data and insights on this page."
+        "content": ""
     }
 }
+
 # Sidebar for navigation
 st.sidebar.title("Navigation")
 page = st.sidebar.radio("Direct to:",
-     ('Home', 'Education', 'Work', 'Projects', 'Showcases', 'Supervision & Mentorship', 'Publication'))
+     ('Home', 'Work', 'Education', 'Projects', 'Showcases', 'Supervision & Mentorship', 'Publications'))
 
 # Display the selected page content
 st.title(pages[page]["title"])
 st.write(pages[page]["content"])
 
-if pages == "Home":
+if page == "Home":
     ###title
-    st.write("# Welcome to the world of TreesLab*")
-    st.write("### Technical and Strategical Solutions to Transport Decarbonization")
-    st.write('##### *"Trees" stands for: Transportation, Environment, Economy, Sustainability')
+    st.write("Welcome to the world of TreesLab*")
+    st.markdown("### Technical and Strategical Solutions to Transport Decarbonization")
+    st.markdown('##### *"Trees" stands for: Transportation, Environment, Economy, Sustainability')
     st.markdown("---")  # Horizontal line
-
-    ##customize background and text color
-    st.markdown(
-        """
-        <style>
-        body {
-            background-color: #eff5e4;
-            color: #333333;
-        }
-        .stTextInput {
-            color: #4CAF50;
-        }
-        .stButton > button {
-            background-color: #4CAF50;
-            color: white;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
 
     #news
     st.markdown('Recent news')
@@ -95,17 +76,12 @@ if pages == "Home":
         st.header("An in-depth communication with Austria-based NGO IIASA (Jul-17-2024)")
         st.write("Sponsored by the NSFC-funded international collaboration project, Decarbonization of Residents Life Behavior, we traveled to Vienna, Austria, and had a talk at the IIASA. MaaS business, travelers' behavior analysis, and influencing factors were discussed.")
 
-#st.sidebar.header('Dictionary')
+elif page == 'Work':
+  st.subheader('Working experience')
+  st.write('1. 2021-current, Associate Professor, School of Transportation, Southeast University')
+  st.write('2. 2020, Postdoctoral fellow, Civil Engineering, University of Toronto')
 
-#if st.sidebar.button('Return to home'):
-#  st.title(' ')
-
-#st.sidebar.header('Dictionary')
-#genre = st.sidebar.radio(
-#     "Direct to:",
-#     ('Home', 'Education', 'Working experience', 'Projects', 'Teaching', 'Studnets', 'Publication'))
-
-elif pages == 'Education':
+elif page == 'Education':
   st.subheader('Education')
   st.write('1. 2016-2020, PhD, Civil Engineering, University of Toronto')
   st.write(str('   '+ 'Supervisor: Marianne Hatzopoulou'))
@@ -118,15 +94,10 @@ elif pages == 'Education':
   st.write('4. 2010-2014, Bachelor of Engineering, Civil Engineering, Tongji University')
   st.write(str('   '+ 'Supervisor: Chao Yang'))
 
-elif pages == 'Work':
-  st.subheader('Working experience')
-  st.write('1. 2021-current, Associate Professor, School of Transportation, Southeast University')
-  st.write('2. 2020, Postdoctoral fellow, Civil Engineering, University of Toronto')
-
-elif pages == "Showcases":
+elif page == "Showcases":
     st.write('')
 
-elif pages == 'Projects':
+elif page == 'Projects':
   with st.expander("Current projects"):
     st.write("1. Eco-driving Guidance Decision Modelling Based on Drivers' Dynamic Cognitive Behaviour, National Natural Science Foundation of China (Young Scholar), PI, 2022-2024")
     st.write("2. Eco-driving Guidance Based on the Heterogeneity of Drivers’ Cognitive Workload, Natural Science Foundation of Jiangsu Province (Young Scholar), PI, 2021-2024")
@@ -135,7 +106,7 @@ elif pages == 'Projects':
   with st.expander('Past projects'):
     st.write('1. Eco-Score: environmental evaluation of driving operations, NSERC of Canada, Participation, 2019-2020')
 
-elif pages == 'Supervision & Mentorship':
+elif page == 'Supervision & Mentorship':
   st.subheader('Courses')
   st.write("2nd-year undergraduate in the major of transportation, Transportation Management")
 
@@ -152,7 +123,7 @@ elif pages == 'Supervision & Mentorship':
     st.write("2. (2021-2022) Carbon Benefit Design to Encourage Greener Travel Behaviour; Led by Ruoyu Chen")
     st.write("3. (2021-2022) Low-Carbon MaaS (Mobility-as-a-Service) Design; Led by Yuchen Ling")
 
-elif pages == 'Publication':
+elif page == 'Publications':
   st.subheader('Publication')
   #st.success("More papers, check my [ResearchGate](%s), or [GoogleScholar](%s)" % (url_rg, url_gs))
   st.write('1.	Tu, R., Xu, J., Wang, A., Zhang, M., Zhai, Z., Hatzopoulou, M., 2022. Real-world emissions and fuel consumption of gasoline and hybrid light duty vehicles under local and regulatory drive cycles. Sci. Total Environ. 805, 150407. https://doi.org/10.1016/j.scitotenv.2021.150407')
@@ -166,3 +137,38 @@ elif pages == 'Publication':
   st.write('9.	Zhang, A., Li, T., Tu, R., Dong, C., Chen, H., Gao, J., Liu, Y., 2021. The Effect of Nonlinear Charging Function and Line Change Constraints on Electric Bus Scheduling. Promet - Traffic&Transportation 33, 527–538. https://doi.org/10.7307/ptt.v33i4.3730')
   st.write('10.	Zhai, Z., Tu, R., Xu, J., Wang, A., Hatzopoulou, M., 2020. Capturing the variability in instantaneous vehicle emissions based on field test data. Atmosphere (Basel). 11. https://doi.org/10.3390/ATMOS11070765')
   st.write('11.	Wang, A., Tu, R., Xu, J., Zhai, Z., Hatzopoulou, M., 2022. A novel modal emission modelling approach and its application with on-road emission measurements. Appl. Energy 306, 117967.')
+
+
+
+#st.sidebar.header('Dictionary')
+
+#if st.sidebar.button('Return to home'):
+#  st.title(' ')
+
+#st.sidebar.header('Dictionary')
+#genre = st.sidebar.radio(
+#     "Direct to:",
+#     ('Home', 'Education', 'Working experience', 'Projects', 'Teaching', 'Studnets', 'Publication'))
+
+
+""""
+##customize background and text color
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #eff5e4;
+        color: #333333;
+    }
+    .stTextInput {
+        color: #4CAF50;
+    }
+    .stButton > button {
+        background-color: #4CAF50;
+        color: white;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+""""
