@@ -98,15 +98,15 @@ elif page == 'Lifetime milestons':
 
     st.subheader('Education')
     st.write('2016-2020, PhD, Dept. Civil & Mineral Engineering, University of Toronto')
-    st.write(str('   '+ 'Supervisor: Marianne Hatzopoulou'))
-    st.write(' ')
+    st.caption('Supervisor: Marianne Hatzopoulou')
+
     st.write('2014-2016, Master of Science, Dept. Civil & Environmental Engineering, Virginia Tech')
-    st.write(str('   '+ 'Supervisor: Hesham Rakha'))
-    st.write(' ')
+    st.caption('Supervisor: Hesham Rakha')
+
     st.write('2013-2014, Exchange, Civil Engineering, EPFL')
-    st.write(' ')
+
     st.write('2010-2014, Bachelor of Engineering, College of Transportation, Tongji University')
-    st.write(str('   '+ 'Supervisor: Chao Yang'))
+    st.caption('Supervisor: Chao Yang')
 
 elif page == "Showcases":
     st.write('')
