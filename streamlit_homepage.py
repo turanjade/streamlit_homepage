@@ -88,9 +88,7 @@ if page == "Home":
             st.header("An in-depth communication with Austria-based NGO IIASA (Jul-17-2024)")
             st.write("Sponsored by the NSFC-funded international collaboration project, Decarbonization of Residents Life Behavior, we traveled to Vienna, Austria, and had a talk at the IIASA. MaaS business, travelers' behavior analysis, and influencing factors were discussed.")
         with col2:
-
-
-
+            st.header("An in-depth communication with Austria-based NGO IIASA (Jul-17-2024)")
 elif page == 'Work':
     st.subheader('Working experience')
     st.write('2024.08-current, Visiting Professor, Dept. Chemical Engineering & Applied Chemistry, University of Toronto')
