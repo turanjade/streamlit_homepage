@@ -54,8 +54,8 @@ with col1:
     st.write("Starting from Aug 16, I will be visiting the Department of Chemical Engineering and Applied Chemistry at the University of Toronto. Hopefully, this visiting will bring much new ideas on the travel-related environmental and social impact and mitigation practices from a different perspective")
 
 with col2:
-    st.header("Column 2")
-    st.write("This is column 2")
+    st.header("An in-depth communication with Austria-based NGO IIASA")
+    st.write("Sponsored by the NSFC-funded international collaboration project, Decarbonization of Residents Life Behavior, we traveled to Vienna, Austria, and had a talk at the IIASA. MaaS business, travelers' behavior analysis, and influencing factors were discussed.")
 
 #st.sidebar.header('Dictionary')
 
