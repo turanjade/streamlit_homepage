@@ -19,10 +19,30 @@ st.set_page_config(
 
 #st.title('Welcome! This is Ran Tu')
 
-st.markdown("# Welcome to the world of TreesLab")
+st.markdown("# Welcome to the world of TreesLab*")
 st.markdown("### Technical and Strategical Solutions to Transport Decarbonization")
-st.markdown('##### "Trees" stands for: Transportation, Environment, Economy, Sustainability')
+st.markdown('##### *"Trees" stands for: Transportation, Environment, Economy, Sustainability')
 st.markdown("---")  # Horizontal line
+
+##customize background and text color
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #f5f5f5;
+        color: #333333;
+    }
+    .stTextInput {
+        color: #4CAF50;
+    }
+    .stButton > button {
+        background-color: #4CAF50;
+        color: white;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 #st.sidebar.header('Dictionary')
 
