@@ -24,7 +24,7 @@ pages = {
         "title": "Welcome to the world of TreesLab*",
         "content": ""
     },
-    "Lifetime milestons": {
+    "Professional milestons": {
         "title": "Experiences of work and education",
         "content": ""
     },
@@ -53,7 +53,7 @@ pages = {
 # Sidebar for navigation
 st.sidebar.title("Navigation")
 page = st.sidebar.radio("Direct to:",
-     ('Home', 'Lifetime milestons', 'Projects', 'Showcases', 'Supervision & Mentorship', 'Publications'))
+     ('Home', 'Professional milestons', 'Projects', 'Showcases', 'Supervision & Mentorship', 'Publications'))
 
 # Display the selected page content
 st.title(pages[page]["title"])
@@ -89,7 +89,7 @@ if page == "Home":
             st.write("Sponsored by the NSFC-funded international collaboration project, Decarbonization of Residents Life Behavior, we traveled to Vienna, Austria, and had a talk at the IIASA. MaaS business, travelers' behavior analysis, and influencing factors were discussed.")
         with col2:
             st.header("An in-depth communication with Austria-based NGO IIASA (Jul-17-2024)")
-elif page == 'Lifetime milestons':
+elif page == 'Professional milestons':
     st.subheader('Working experience')
     st.write('2024.08-current, Visiting Professor, Dept. Chemical Engineering & Applied Chemistry, University of Toronto')
     st.write('2023.01-current, Chief Scientist, Green-Distributor, Suzhou, China')
