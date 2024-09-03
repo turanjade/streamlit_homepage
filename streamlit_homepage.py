@@ -6,8 +6,8 @@ import streamlit as st
 import numpy as np
 
 
-#url_rg = "https://www.researchgate.net/profile/Ran-Tu-3"
-#url_gs = 'https://scholar.google.com/citations?user=ueR4KsUAAAAJ&hl=en'
+url_rg = "https://www.researchgate.net/profile/Ran-Tu-3"
+url_gs = 'https://scholar.google.com/citations?user=ueR4KsUAAAAJ&hl=en'
 #st.write("check out this [link](%s)" % url)
 
 st.set_page_config(
@@ -78,37 +78,39 @@ if page == "Home":
 
 elif page == 'Work':
   st.subheader('Working experience')
-  st.write('1. 2021-current, Associate Professor, School of Transportation, Southeast University')
-  st.write('2. 2020, Postdoctoral fellow, Civil Engineering, University of Toronto')
+  st.write('2024.08-current, Visiting Professor, Dept. Chemical Engineering & Applied Chemistry, University of Toronto')
+  st.write('2023.01-current, Chief Scientist, Green-Distributor, Suzhou, China')
+  st.write('2020.11-current, Associate Professor, School of Transportation, Southeast University')
+  st.write('2020.05-2020.10, Postdoctoral Researcher, Dept. Civil & Mineral Engineering, University of Toronto & TD Inc.')
 
 elif page == 'Education':
   st.subheader('Education')
-  st.write('1. 2016-2020, PhD, Civil Engineering, University of Toronto')
+  st.write('2016-2020, PhD, Dept. Civil & Mineral Engineering, University of Toronto')
   st.write(str('   '+ 'Supervisor: Marianne Hatzopoulou'))
   st.write(' ')
-  st.write('2. 2014-2016, Master of Science, Civil Engineering, Virginia Tech')
+  st.write('2014-2016, Master of Science, Dept. Civil & Environmental Engineering, Virginia Tech')
   st.write(str('   '+ 'Supervisor: Hesham Rakha'))
   st.write(' ')
-  st.write('3. 2013-2014, Exchange, Civil Engineering, EPFL')
+  st.write('2013-2014, Exchange, Civil Engineering, EPFL')
   st.write(' ')
-  st.write('4. 2010-2014, Bachelor of Engineering, Civil Engineering, Tongji University')
+  st.write('2010-2014, Bachelor of Engineering, College of Transportation, Tongji University')
   st.write(str('   '+ 'Supervisor: Chao Yang'))
 
 elif page == "Showcases":
     st.write('')
 
 elif page == 'Projects':
-  with st.expander("Current projects"):
-    st.write("1. Eco-driving Guidance Decision Modelling Based on Drivers' Dynamic Cognitive Behaviour, National Natural Science Foundation of China (Young Scholar), PI, 2022-2024")
-    st.write("2. Eco-driving Guidance Based on the Heterogeneity of Drivers’ Cognitive Workload, Natural Science Foundation of Jiangsu Province (Young Scholar), PI, 2021-2024")
-    st.write("3. Modify Drivers' behaviour to Adapt for Lower Emissions, National Key R&D Program of China, Co-PI, 2021-2024")
-    st.write("4. Dynamic Optimization of Electric Bus Services with Energy Consumption Uncertainties, FAW-Volkswagen China Environmental Protection Foundation Automotive Environmental Innovation Leading Program, PI, 2022-2023")
+  with st.expander("Ongoing projects"):
+    st.write("Eco-driving Guidance Decision Modelling Based on Drivers' Dynamic Cognitive Behaviour, National Natural Science Foundation of China, PI, 2022-2024")
+    st.write("Eco-driving Guidance Based on the Heterogeneity of Drivers’ Cognitive Workload, Natural Science Foundation of Jiangsu Province, PI, 2021-2024")
+    st.write("Modify Drivers' behaviour to Adapt for Lower Emissions, National Key R&D Program of China, Co-PI, 2021-2024")
+    st.write("Dynamic Optimization of Electric Bus Services with Energy Consumption Uncertainties, FAW-Volkswagen China Environmental Protection Foundation Automotive Environmental Innovation Leading Program, PI, 2022-2023")
   with st.expander('Past projects'):
-    st.write('1. Eco-Score: environmental evaluation of driving operations, NSERC of Canada, Participation, 2019-2020')
+    st.write('Eco-Score: environmental evaluation of driving operations, NSERC of Canada, collaboration with TD Inc., Participation, 2019-2020')
 
 elif page == 'Supervision & Mentorship':
-  st.subheader('Courses')
-  st.write("2nd-year undergraduate in the major of transportation, Transportation Management")
+  with st.expander('Courses')
+    st.write("2nd-year undergraduate in the major of transportation, Transportation Management")
 
   with st.expander("Master students"):
     st.write("1. (2022-2024) Qiuzi Chen")
@@ -125,7 +127,7 @@ elif page == 'Supervision & Mentorship':
 
 elif page == 'Publications':
   st.subheader('Publication')
-  #st.success("More papers, check my [ResearchGate](%s), or [GoogleScholar](%s)" % (url_rg, url_gs))
+  st.success("More papers, check my [ResearchGate](%s), or [GoogleScholar](%s)" % (url_rg, url_gs))
   st.write('1.	Tu, R., Xu, J., Wang, A., Zhang, M., Zhai, Z., Hatzopoulou, M., 2022. Real-world emissions and fuel consumption of gasoline and hybrid light duty vehicles under local and regulatory drive cycles. Sci. Total Environ. 805, 150407. https://doi.org/10.1016/j.scitotenv.2021.150407')
   st.write('2.	Tu, R., Xu, J., Wang, A., Zhai, Z., Hatzopoulou, M., 2021. Effects of ambient temperature and cold starts on excess NOx emissions in a gasoline direct injection vehicle. Sci. Total Environ. 760, 143402.')
   st.write('3.	Tu, R., Li, T., Meng, C., Xie, Y., Xie, F., Yang, F., Chen, H., Li, Y., Gao, J., Liu, Y., 2021. Real-world Emissions of Construction Mobile Machines and Comparison to a Non-road Emission Model. Sci. Total Environ. 771, 145365. https://doi.org/10.1016/j.scitotenv.2021.145365')
