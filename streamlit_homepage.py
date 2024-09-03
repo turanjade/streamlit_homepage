@@ -68,7 +68,7 @@ if page == "Home":
     st.markdown("---")  # Horizontal line
 
     #news
-    st.markdown('Recent news')
+    st.markdown('Recent updates')
 
     with st.container():
         # Create columns in the first container
