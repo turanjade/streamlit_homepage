@@ -10,10 +10,17 @@ url_rg = "https://www.researchgate.net/profile/Ran-Tu-3"
 url_gs = 'https://scholar.google.com/citations?user=ueR4KsUAAAAJ&hl=en'
 #st.write("check out this [link](%s)" % url)
 
+st.set_page_config(
+    page_title="Welcome to Ran Tu's Homepage",
+    page_icon=":rocket:",  # You can use an emoji or a local image path
+    layout="wide",         # "centered" or "wide"
+    initial_sidebar_state="expanded",  # "expanded" or "collapsed"
+)
+
 st.title('Welcome! This is Ran Tu')
 
 #st.sidebar.header('Dictionary')
-  
+
 #if st.sidebar.button('Return to home'):
 #  st.title(' ')
 
@@ -47,14 +54,14 @@ if genre == 'Projects':
     st.write("1. Eco-driving Guidance Decision Modelling Based on Drivers' Dynamic Cognitive Behaviour, National Natural Science Foundation of China (Young Scholar), PI, 2022-2024")
     st.write("2. Eco-driving Guidance Based on the Heterogeneity of Drivers’ Cognitive Workload, Natural Science Foundation of Jiangsu Province (Young Scholar), PI, 2021-2024")
     st.write("3. Modify Drivers' behaviour to Adapt for Lower Emissions, National Key R&D Program of China, Co-PI, 2021-2024")
-    st.write("4. Dynamic Optimization of Electric Bus Services with Energy Consumption Uncertainties, FAW-Volkswagen China Environmental Protection Foundation Automotive Environmental Innovation Leading Program, PI, 2022-2023")          
+    st.write("4. Dynamic Optimization of Electric Bus Services with Energy Consumption Uncertainties, FAW-Volkswagen China Environmental Protection Foundation Automotive Environmental Innovation Leading Program, PI, 2022-2023")
   with st.expander('Past projects'):
     st.write('1. Eco-Score: environmental evaluation of driving operations, NSERC of Canada, Participation, 2019-2020')
 
 if genre == 'Teaching':
   st.subheader('Courses')
   st.write("2nd-year undergraduate in the major of transportation, Transportation Management")
-    
+
 if genre == 'Studnets':
   with st.expander("Master students"):
     st.write("1. (2022-2024) Qiuzi Chen")
