@@ -19,6 +19,10 @@ st.set_page_config(
 
 st.title('Welcome! This is Ran Tu')
 
+st.markdown("# Welcome to My Streamlit Homepage")
+st.markdown("### Technical and Strategical Solutions to Transport Decarbonization")
+st.markdown("---")  # Horizontal line
+
 #st.sidebar.header('Dictionary')
 
 #if st.sidebar.button('Return to home'):
