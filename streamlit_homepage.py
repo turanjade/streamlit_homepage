@@ -31,7 +31,7 @@ pages = {
     #"Education": {
     #    "title": "Education Experiences",
     #    "content": ""
-    },
+    #},
     "Projects": {
         "title": "Projects",
         "content": ""
