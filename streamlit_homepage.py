@@ -17,32 +17,6 @@ st.set_page_config(
     #initial_sidebar_state="collapsed",  # "expanded" or "collapsed"
 )
 
-# Define a function to include custom JavaScript
-def include_javascript():
-    st.markdown(
-        """
-        <script>
-        // Function to automatically expand all Streamlit expanders
-        function expandAllExpanders() {
-            var expanders = document.querySelectorAll('.stExpander');
-            expanders.forEach(function(expander) {
-                var header = expander.querySelector('.stExpanderHeader');
-                if (header) {
-                    header.click(); // Simulate a click to expand the expander
-                }
-            });
-        }
-        // Call the function to expand all expanders after the page loads
-        window.onload = expandAllExpanders;
-        </script>
-        """,
-        unsafe_allow_html=True
-    )
-
-# Add the custom JavaScript to the Streamlit app
-include_javascript()
-
-
 pages = {
     "Home": {
         "title": "Welcome to the world of TreesLab*",
@@ -162,19 +136,13 @@ elif page == 'Supervision & Mentorship':
 elif page == 'Publications':
   st.subheader('Publication')
   st.success("More papers, check my [ResearchGate](%s), or [GoogleScholar](%s)" % (url_rg, url_gs))
-  st.write('1.	Tu, R., Xu, J., Wang, A., Zhang, M., Zhai, Z., Hatzopoulou, M., 2022. Real-world emissions and fuel consumption of gasoline and hybrid light duty vehicles under local and regulatory drive cycles. Sci. Total Environ. 805, 150407. https://doi.org/10.1016/j.scitotenv.2021.150407')
-  st.write('2.	Tu, R., Xu, J., Wang, A., Zhai, Z., Hatzopoulou, M., 2021. Effects of ambient temperature and cold starts on excess NOx emissions in a gasoline direct injection vehicle. Sci. Total Environ. 760, 143402.')
-  st.write('3.	Tu, R., Li, T., Meng, C., Xie, Y., Xie, F., Yang, F., Chen, H., Li, Y., Gao, J., Liu, Y., 2021. Real-world Emissions of Construction Mobile Machines and Comparison to a Non-road Emission Model. Sci. Total Environ. 771, 145365. https://doi.org/10.1016/j.scitotenv.2021.145365')
-  st.write('4.	Tu, R., Gai, Y. (Jessie), Farooq, B., Posen, D., Hatzopoulou, M., 2020. Electric vehicle charging optimization to minimize marginal greenhouse gas emissions from power generation. Appl. Energy 277, 115517. https://doi.org/10.1016/j.apenergy.2020.115517')
-  st.write('5.	Tu, R., Alfaseeh, L., Djavadian, S., Farooq, B., Hatzopoulou, M., 2019. Quantifying the impacts of dynamic control in connected and automated vehicles on greenhouse gas emissions and urban NO2 concentrations. Transp. Res. Part D Transp. Environ. 73, 142–151. https://doi.org/10.1016/j.trd.2019.06.008')
-  st.write('6.	Tu, R., Kamel, I., Abdulhai, B., Hatzopoulou, M., 2018. Reducing Transportation Greenhouse Gas Emissions Through the Development of Policies Targeting High-Emitting Trips. Transp. Res. Rec. https://doi.org/10.1177/0361198118755714')
-  st.write('7.	Tu, R., Kamel, I., Wang, A., Abdulhai, B., Hatzopoulou, M., 2018. Development of a hybrid modelling approach for the generation of an urban on-road transportation emission inventory. Transp. Res. Part D Transp. Environ. 62, 604–618. https://doi.org/10.1016/j.trd.2018.04.011')
-  st.write('8.	Tu, R., Wang, A., Hatzopoulou, M., 2019. Improving the Accuracy of Emission Inventories with a Machine-Learning Approach and Investigating Transferability across Cities. J. Air Waste Manage. Assoc. 69, 1377–1390. https://doi.org/10.1080/10962247.2019.1668872')
-  st.write('9.	Zhang, A., Li, T., Tu, R., Dong, C., Chen, H., Gao, J., Liu, Y., 2021. The Effect of Nonlinear Charging Function and Line Change Constraints on Electric Bus Scheduling. Promet - Traffic&Transportation 33, 527–538. https://doi.org/10.7307/ptt.v33i4.3730')
-  st.write('10.	Zhai, Z., Tu, R., Xu, J., Wang, A., Hatzopoulou, M., 2020. Capturing the variability in instantaneous vehicle emissions based on field test data. Atmosphere (Basel). 11. https://doi.org/10.3390/ATMOS11070765')
-  st.write('11.	Wang, A., Tu, R., Xu, J., Zhai, Z., Hatzopoulou, M., 2022. A novel modal emission modelling approach and its application with on-road emission measurements. Appl. Energy 306, 117967.')
-
-
+  st.write('(Updated in Aug-2024: 50+ peer-reviewed articles, 855 citations, h-index: 18)')
+  with st.expander('Electric-vehicle related'):
+    st.write('')
+  with st.expander('Emission & Air quality related'):
+    st.write('')
+  with st.expander('Behavior analysis related'):
+    st.write('')
 
 #st.sidebar.header('Dictionary')
 
