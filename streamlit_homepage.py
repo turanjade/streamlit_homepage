@@ -19,7 +19,8 @@ st.set_page_config(
 
 #st.title('Welcome! This is Ran Tu')
 
-st.markdown("# Welcome to My Streamlit Homepage")
+st.markdown("# Welcome to the world of TreesLab")
+st.markdown('#### "Trees" stands for: Transportation, Environment, Economy, SUstainability')
 st.markdown("### Technical and Strategical Solutions to Transport Decarbonization")
 st.markdown("---")  # Horizontal line
 
