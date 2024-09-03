@@ -17,59 +17,94 @@ st.set_page_config(
     initial_sidebar_state="collapsed",  # "expanded" or "collapsed"
 )
 
-#st.title('Welcome! This is Ran Tu')
-
-###title
-st.markdown("# Welcome to the world of TreesLab*")
-st.markdown("### Technical and Strategical Solutions to Transport Decarbonization")
-st.markdown('##### *"Trees" stands for: Transportation, Environment, Economy, Sustainability')
-st.markdown("---")  # Horizontal line
-
-##customize background and text color
-st.markdown(
-    """
-    <style>
-    body {
-        background-color: #eff5e4;
-        color: #333333;
+pages = {
+    "Home": {
+        "title": "Welcome to the Home Page",
+        #"content": "This is the home page of the app. Here, you can find an overview of what this app offers."
+    },
+    "Work": {
+        "title": "Work Experiences",
+        #"content": "This page gives you more information about the purpose and creators of this app."
+    },
+    "Education": {
+        "title": "Education Experiences",
+        #"content": "Here you can find the contact information to reach out to the team."
+    },
+    "Projects": {
+        "title": "Projects",
+        #"content": "Explore detailed data and insights on this page."
+    },
+    "Showcases": {
+        "title": "Case studies",
+        #"content": "Explore detailed data and insights on this page."
+    },
+    "Supervision & Mentorship": {
+        "title": "My students",
+        #"content": "Explore detailed data and insights on this page."
+    },
+    "Publications": {
+        "title": "Peer-reviewed journal & conference articles",
+        #"content": "Explore detailed data and insights on this page."
     }
-    .stTextInput {
-        color: #4CAF50;
-    }
-    .stButton > button {
-        background-color: #4CAF50;
-        color: white;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+}
+# Sidebar for navigation
+st.sidebar.title("Navigation")
+page = st.sidebar.selectbox("Select a page", options=list(pages.keys()))
 
-#news
-st.markdown('Recent news')
-col1, col2 = st.columns(2)
+# Display the selected page content
+st.title(pages[page]["title"])
+#st.write(pages[page]["content"])
 
-with col1:
-    st.header("Taking a breath and a half-year break at UofT")
-    st.write("Starting from Aug 16, I will be visiting the Department of Chemical Engineering and Applied Chemistry at the University of Toronto. Hopefully, this visiting will bring much new ideas on the travel-related environmental and social impact and mitigation practices from a different perspective")
+if pages == "Home":
+    ###title
+    st.markdown("# Welcome to the world of TreesLab*")
+    st.markdown("### Technical and Strategical Solutions to Transport Decarbonization")
+    st.markdown('##### *"Trees" stands for: Transportation, Environment, Economy, Sustainability')
+    st.markdown("---")  # Horizontal line
 
-with col2:
-    st.header("An in-depth communication with Austria-based NGO IIASA")
-    st.write("Sponsored by the NSFC-funded international collaboration project, Decarbonization of Residents Life Behavior, we traveled to Vienna, Austria, and had a talk at the IIASA. MaaS business, travelers' behavior analysis, and influencing factors were discussed.")
+    ##customize background and text color
+    st.markdown(
+        """
+        <style>
+        body {
+            background-color: #eff5e4;
+            color: #333333;
+        }
+        .stTextInput {
+            color: #4CAF50;
+        }
+        .stButton > button {
+            background-color: #4CAF50;
+            color: white;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+    #news
+    st.markdown('Recent news')
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.header("Taking a breath and a half-year break at UofT (Aug-16-2024)")
+        st.write("Starting from Aug 16, I will be visiting the Department of Chemical Engineering and Applied Chemistry at the University of Toronto. Hopefully, this visiting will bring much new ideas on the travel-related environmental and social impact and mitigation practices from a different perspective")
+
+    with col2:
+        st.header("An in-depth communication with Austria-based NGO IIASA (Jul-17-2024)")
+        st.write("Sponsored by the NSFC-funded international collaboration project, Decarbonization of Residents Life Behavior, we traveled to Vienna, Austria, and had a talk at the IIASA. MaaS business, travelers' behavior analysis, and influencing factors were discussed.")
 
 #st.sidebar.header('Dictionary')
 
 #if st.sidebar.button('Return to home'):
 #  st.title(' ')
 
-st.sidebar.header('Dictionary')
-genre = st.sidebar.radio(
-     "Direct to:",
-     ('Home', 'Education', 'Working experience', 'Projects', 'Teaching', 'Studnets', 'Publication'))
+#st.sidebar.header('Dictionary')
+#genre = st.sidebar.radio(
+#     "Direct to:",
+#     ('Home', 'Education', 'Working experience', 'Projects', 'Teaching', 'Studnets', 'Publication'))
 
-if genre == 'Home':
-  st.title(' ')
-if genre == 'Education':
+elif pages == 'Education':
   st.subheader('Education')
   st.write('1. 2016-2020, PhD, Civil Engineering, University of Toronto')
   st.write(str('   '+ 'Supervisor: Marianne Hatzopoulou'))
@@ -82,12 +117,15 @@ if genre == 'Education':
   st.write('4. 2010-2014, Bachelor of Engineering, Civil Engineering, Tongji University')
   st.write(str('   '+ 'Supervisor: Chao Yang'))
 
-if genre == 'Working experience':
+elif pages == 'Work':
   st.subheader('Working experience')
   st.write('1. 2021-current, Associate Professor, School of Transportation, Southeast University')
   st.write('2. 2020, Postdoctoral fellow, Civil Engineering, University of Toronto')
 
-if genre == 'Projects':
+elif pages == "Showcases":
+    st.write('')
+    
+elif pages == 'Projects':
   with st.expander("Current projects"):
     st.write("1. Eco-driving Guidance Decision Modelling Based on Drivers' Dynamic Cognitive Behaviour, National Natural Science Foundation of China (Young Scholar), PI, 2022-2024")
     st.write("2. Eco-driving Guidance Based on the Heterogeneity of Drivers’ Cognitive Workload, Natural Science Foundation of Jiangsu Province (Young Scholar), PI, 2021-2024")
@@ -96,11 +134,10 @@ if genre == 'Projects':
   with st.expander('Past projects'):
     st.write('1. Eco-Score: environmental evaluation of driving operations, NSERC of Canada, Participation, 2019-2020')
 
-if genre == 'Teaching':
+elif pages == 'Supervision & Mentorship':
   st.subheader('Courses')
   st.write("2nd-year undergraduate in the major of transportation, Transportation Management")
 
-if genre == 'Studnets':
   with st.expander("Master students"):
     st.write("1. (2022-2024) Qiuzi Chen")
   with st.expander("Undergraduate students"):
@@ -114,7 +151,7 @@ if genre == 'Studnets':
     st.write("2. (2021-2022) Carbon Benefit Design to Encourage Greener Travel Behaviour; Led by Ruoyu Chen")
     st.write("3. (2021-2022) Low-Carbon MaaS (Mobility-as-a-Service) Design; Led by Yuchen Ling")
 
-if genre == 'Publication':
+elif pages == 'Publication':
   st.subheader('Publication')
   st.success("More papers, check my [ResearchGate](%s), or [GoogleScholar](%s)" % (url_rg, url_gs))
   st.write('1.	Tu, R., Xu, J., Wang, A., Zhang, M., Zhai, Z., Hatzopoulou, M., 2022. Real-world emissions and fuel consumption of gasoline and hybrid light duty vehicles under local and regulatory drive cycles. Sci. Total Environ. 805, 150407. https://doi.org/10.1016/j.scitotenv.2021.150407')
