@@ -17,7 +17,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",  # "expanded" or "collapsed"
 )
 
-st.title('Welcome! This is Ran Tu')
+#st.title('Welcome! This is Ran Tu')
 
 st.markdown("# Welcome to My Streamlit Homepage")
 st.markdown("### Technical and Strategical Solutions to Transport Decarbonization")
