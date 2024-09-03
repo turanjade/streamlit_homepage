@@ -109,7 +109,7 @@ elif page == 'Projects':
     st.write('Eco-Score: environmental evaluation of driving operations, NSERC of Canada, collaboration with TD Inc., Participation, 2019-2020')
 
 elif page == 'Supervision & Mentorship':
-  with st.expander('Courses')
+  with st.expander('Courses'):
     st.write("2nd-year undergraduate in the major of transportation, Transportation Management")
 
   with st.expander("Master students"):
