@@ -111,7 +111,7 @@ if page == "Home":
             st.write("Sponsored by the NSFC-funded international collaboration project, Decarbonization of Residents Life Behavior, we traveled to Vienna, Austria, and had a talk at the IIASA. MaaS business, travelers' behavior analysis, and influencing factors were discussed.")
 
     st.markdown("---")  # Horizontal line
-    st.markdown("_Markdown your location_") ###visualize the viewers location and viewer count
+    st.caption("**_Markdown your location_**") ###visualize the viewers location and viewer count
     # Initialize the viewer count in session state
     if 'view_count' not in st.session_state:
         st.session_state['view_count'] = 0
