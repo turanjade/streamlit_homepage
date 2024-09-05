@@ -19,6 +19,8 @@ st.set_page_config(
     #initial_sidebar_state="collapsed",  # "expanded" or "collapsed"
 )
 
+st.sidebar.markdown('![Visitor count](https://shields-io-visitor-counter.herokuapp.com/badge?page=https://share.streamlit.io/your_deployed_app_link&label=VisitorsCount&labelColor=000000&logo=GitHub&logoColor=FFFFFF&color=1D70B8&style=for-the-badge)')
+
 pages = {
     "Home": {
         "title": "Welcome to the world of TreesLab*",
