@@ -4,6 +4,9 @@ import math
 import pandas as pd
 import streamlit as st
 import numpy as np
+import requests
+import pydeck as pdk
+import pandas as pd
 
 
 url_rg = "https://www.researchgate.net/profile/Ran-Tu-3"
@@ -162,3 +165,46 @@ elif page == 'Publications':
         st.write('')
     with st.expander('Behavior analysis related'):
         st.write('')
+
+
+###get location of viewers
+def get_viewer_location():
+    response = requests.get('https://ipinfo.io/')
+    data = response.json()
+    return {
+        'ip': data['ip'],
+        'location': data['loc'].split(',')  # Latitude, Longitude
+    }
+
+###visualize viewers location
+
+# Step 1: Get the viewer's location (using IP)
+location = get_viewer_location()
+
+# Step 2: Store viewer location
+# In practice, this should be saved in a database. Here, it's just in memory for the example.
+viewer_data = [{'latitude': float(location['location'][0]), 'longitude': float(location['location'][1])}]
+
+# Step 3: Create a dataframe from the location data
+df = pd.DataFrame(viewer_data)
+
+# Step 4: Create the map visualization using Pydeck
+st.pydeck_chart(pdk.Deck(
+    map_style='mapbox://styles/mapbox/light-v9',
+    initial_view_state=pdk.ViewState(
+        latitude=df['latitude'].mean(),
+        longitude=df['longitude'].mean(),
+        zoom=1,
+        pitch=50,
+    ),
+    layers=[
+        pdk.Layer(
+            'ScatterplotLayer',
+            data=df,
+            get_position='[longitude, latitude]',
+            get_radius=100000,
+            get_color=[255, 0, 0],
+            pickable=True,
+        ),
+    ],
+))
