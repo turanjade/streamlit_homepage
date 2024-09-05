@@ -126,9 +126,14 @@ elif page == 'Supervision & Mentorship':
     with st.expander('Courses'):
         st.write("2nd-year undergraduate in the major of transportation, Transportation Management")
     with st.expander("Master students"):
-        st.write("(2022-2024) Qiuzi Chen")
+        st.write("(2024-2028) Xinran Ju. Thesis topic: Vehicle non-exhaust emission measurement and model development")
+        st.write("(2024-2026) Suyang Xu. Thesis topic: Electric bus operation improvement")
+        st.write("(2023-2027) Yanfeng Xu. Thesis topic: Air traveling emission mitigation considering air-rail transit")
+        st.write("(2023-2025) Shan Xue. Thesis: On-road eco-driving guidance design and human factor analysis")
+        st.write("(2022-2024) Qiuzi Chen. Thesis: Brakewear emission modeling and spatiotemporal distribution characteristics")
         st.caption("**(Updated 2024) Although Qiuzi is not able to be here in-person, his poster on non-exhaust emissions attracted a lot of interests!")
         st.caption("**(Updated 2023) Congradulations to Qiuzi for his first paper published in TR-D. This paper discusses about the robust solution for electric bus resource assignment. Check details here:**" % "https://doi.org/10.1016/j.trd.2023.103724")
+
     with st.expander("Undergraduate thesis"):
         st.write('(2023) Chenming Niu')
         st.caption("**(Updated 2024) Congradulations to Chenming for graduating from the UCB and starting a new journey at HKU for his PHD!**")
