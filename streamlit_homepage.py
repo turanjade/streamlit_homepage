@@ -132,24 +132,24 @@ elif page == 'Supervision & Mentorship':
         st.write("(2023-2025) Shan Xue. Thesis: On-road eco-driving guidance design and human factor analysis")
         st.write("(2022-2024) Qiuzi Chen. Thesis: Brakewear emission modeling and spatiotemporal distribution characteristics")
         st.caption("**(Updated 2024) Although Qiuzi is not able to be here in-person, his poster on non-exhaust emissions attracted a lot of interests!**")
-        st.caption("**(Updated 2023) Congradulations to Qiuzi for his first paper published in TR-D. This paper discusses about the robust solution for electric bus resource assignment. Check details here: @[link](%s)**" % "https://doi.org/10.1016/j.trd.2023.103724")
+        st.caption("**(Updated 2023) congratulations to Qiuzi for his first paper published in TR-D. This paper discusses about the robust solution for electric bus resource assignment. Check details here: @[link](%s)**" % "https://doi.org/10.1016/j.trd.2023.103724")
 
     with st.expander("Undergraduate thesis"):
         st.write('(2023) Chenming Niu')
-        st.caption("**(Updated 2024) Congradulations to Chenming for graduating from the UCB and starting a new journey at HKU for his PHD!**")
+        st.caption("**(Updated 2024) congratulations to Chenming for graduating from the UCB and starting a new journey at HKU for his PHD!**")
         st.caption("**(Updated 2024) also, check out our latest publication on E-bus resource allocation @[link](%s)**" % "https://doi.org/10.1016/j.multra.2024.100165")
         st.write('(2023) Shiyu Zhao')
         st.caption("**Congraduations to Shiyu for entering the Univeristy of British Columbia! Fingers crossed!**")
         st.write("(2022) Qiuzi Chen")
         st.write("(2022) Haoran Chen")
         st.write("(2021) Yifei Su")
-        st.caption("**Congradulations to Yifei for the acceptance of her paper in the TRB 2022🎉🎉🎉!**")
+        st.caption("**congratulations to Yifei for the acceptance of her paper in the TRB 2022🎉🎉🎉!**")
     with st.expander("Undergraduate student innovation projects"):
         st.write('(2022-2023) Transport-Renewable Energy Integration for Community and EV Charging')
         st.write("(2021-2022) Eco-Scoring for Ride-hailing Vehicles")
         #st.caption("Check out the latest updates @[link](%s)" % "https://share.streamlit.io/trjade1234/eco_score/main")
         st.write("(2021-2022) Carbon Benefit Design to Encourage Greener Travel Behaviour")
-        st.caption('**Congradulations to this excellent group for the publication on the carbon incentive design framework! Check out here: @[link](%s)**' % "https://doi.org/10.1016/j.cstp.2024.101205")
+        st.caption('**congratulations to this excellent group for the publication on the carbon incentive design framework! Check out here: @[link](%s)**' % "https://doi.org/10.1016/j.cstp.2024.101205")
         st.write("(2021-2022) Low-Carbon MaaS (Mobility-as-a-Service) Design")
 
 elif page == 'Publications':
