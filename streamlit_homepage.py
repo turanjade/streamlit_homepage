@@ -131,7 +131,7 @@ elif page == 'Supervision & Mentorship':
         st.write("(2023-2027) Yanfeng Xu. Thesis topic: Air traveling emission mitigation considering air-rail transit")
         st.write("(2023-2025) Shan Xue. Thesis: On-road eco-driving guidance design and human factor analysis")
         st.write("(2022-2024) Qiuzi Chen. Thesis: Brakewear emission modeling and spatiotemporal distribution characteristics")
-        st.caption("**(Updated 2024) Although Qiuzi is not able to be here in-person, his poster on non-exhaust emissions attracted a lot of interests!")
+        st.caption("**(Updated 2024) Although Qiuzi is not able to be here in-person, his poster on non-exhaust emissions attracted a lot of interests!**")
         st.caption("**(Updated 2023) Congradulations to Qiuzi for his first paper published in TR-D. This paper discusses about the robust solution for electric bus resource assignment. Check details here: @[link](%s)**" % "https://doi.org/10.1016/j.trd.2023.103724")
 
     with st.expander("Undergraduate thesis"):
