@@ -109,7 +109,9 @@ if page == "Home":
         with col2:
             st.header("_An in-depth communication with Austria-based NGO IIASA (Jul-17-2024)_")
             st.write("Sponsored by the NSFC-funded international collaboration project, Decarbonization of Residents Life Behavior, we traveled to Vienna, Austria, and had a talk at the IIASA. MaaS business, travelers' behavior analysis, and influencing factors were discussed.")
-    st.header("_Markdown your location_")
+
+    st.markdown("---")  # Horizontal line
+    st.markdown("_Markdown your location_")
     # Step 4: Create the map visualization using Pydeck
     st.pydeck_chart(pdk.Deck(
         map_style='mapbox://styles/mapbox/light-v9',
