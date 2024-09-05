@@ -22,6 +22,22 @@ st.set_page_config(
     #initial_sidebar_state="collapsed",  # "expanded" or "collapsed"
 )
 
+###get location of viewers
+def get_viewer_location():
+    response = requests.get('https://ipinfo.io/')
+    data = response.json()
+    return {
+        'ip': data['ip'],
+        'location': data['loc'].split(',')  # Latitude, Longitude
+    }
+##Get the viewer's location (using IP)
+location = get_viewer_location()
+# Step 2: Store viewer location
+# In practice, this should be saved in a database. Here, it's just in memory for the example.
+viewer_data = [{'latitude': float(location['location'][0]), 'longitude': float(location['location'][1])}]
+# Step 3: Create a dataframe from the location data
+df = pd.DataFrame(viewer_data)
+
 pages = {
     "Home": {
         "title": "Welcome to the world of TreesLab*",
@@ -93,6 +109,27 @@ if page == "Home":
         with col2:
             st.header("_An in-depth communication with Austria-based NGO IIASA (Jul-17-2024)_")
             st.write("Sponsored by the NSFC-funded international collaboration project, Decarbonization of Residents Life Behavior, we traveled to Vienna, Austria, and had a talk at the IIASA. MaaS business, travelers' behavior analysis, and influencing factors were discussed.")
+    st.header("_Markdown your location_")
+    # Step 4: Create the map visualization using Pydeck
+    st.pydeck_chart(pdk.Deck(
+        map_style='mapbox://styles/mapbox/light-v9',
+        initial_view_state=pdk.ViewState(
+            latitude=df['latitude'].mean(),
+            longitude=df['longitude'].mean(),
+            zoom=1,
+            pitch=50,
+        ),
+        layers=[
+            pdk.Layer(
+                'ScatterplotLayer',
+                data=df,
+                get_position='[longitude, latitude]',
+                get_radius=100000,
+                get_color=[255, 0, 0],
+                pickable=True,
+            ),
+        ],
+    ))
 
 elif page == 'Professional milestons':
     st.subheader('Working experience')
@@ -165,46 +202,3 @@ elif page == 'Publications':
         st.write('')
     with st.expander('Behavior analysis related'):
         st.write('')
-
-
-###get location of viewers
-def get_viewer_location():
-    response = requests.get('https://ipinfo.io/')
-    data = response.json()
-    return {
-        'ip': data['ip'],
-        'location': data['loc'].split(',')  # Latitude, Longitude
-    }
-
-###visualize viewers location
-
-# Step 1: Get the viewer's location (using IP)
-location = get_viewer_location()
-
-# Step 2: Store viewer location
-# In practice, this should be saved in a database. Here, it's just in memory for the example.
-viewer_data = [{'latitude': float(location['location'][0]), 'longitude': float(location['location'][1])}]
-
-# Step 3: Create a dataframe from the location data
-df = pd.DataFrame(viewer_data)
-
-# Step 4: Create the map visualization using Pydeck
-st.pydeck_chart(pdk.Deck(
-    map_style='mapbox://styles/mapbox/light-v9',
-    initial_view_state=pdk.ViewState(
-        latitude=df['latitude'].mean(),
-        longitude=df['longitude'].mean(),
-        zoom=1,
-        pitch=50,
-    ),
-    layers=[
-        pdk.Layer(
-            'ScatterplotLayer',
-            data=df,
-            get_position='[longitude, latitude]',
-            get_radius=100000,
-            get_color=[255, 0, 0],
-            pickable=True,
-        ),
-    ],
-))
