@@ -22,21 +22,6 @@ st.set_page_config(
     #initial_sidebar_state="collapsed",  # "expanded" or "collapsed"
 )
 
-###get location of viewers
-def get_viewer_location():
-    response = requests.get('https://ipinfo.io/')
-    data = response.json()
-    return {
-        'ip': data['ip'],
-        'location': data['loc'].split(',')  # Latitude, Longitude
-    }
-##Get the viewer's location (using IP)
-location = get_viewer_location()
-# Step 2: Store viewer location
-# In practice, this should be saved in a database. Here, it's just in memory for the example.
-viewer_data = [{'latitude': float(location['location'][0]), 'longitude': float(location['location'][1])}]
-# Step 3: Create a dataframe from the location data
-df = pd.DataFrame(viewer_data)
 
 pages = {
     "Home": {
@@ -111,36 +96,7 @@ if page == "Home":
             st.write("Sponsored by the NSFC-funded international collaboration project, Decarbonization of Residents Life Behavior, we traveled to Vienna, Austria, and had a talk at the IIASA. MaaS business, travelers' behavior analysis, and influencing factors were discussed.")
 
     st.markdown("---")  # Horizontal line
-    '''
-    st.caption("**_Markdown your location_**") ###visualize the viewers location and viewer count
-    # Initialize the viewer count in session state
-    if 'view_count' not in st.session_state:
-        st.session_state['view_count'] = 0
-    # Increment the count when the page loads
-    st.session_state['view_count'] += 1
-    # Display the count
-    st.write(f"View Count: {st.session_state['view_count']}")
-    # Step 4: Create the map visualization using Pydeck
-    st.pydeck_chart(pdk.Deck(
-        map_style='mapbox://styles/mapbox/light-v9',
-        initial_view_state=pdk.ViewState(
-            latitude=df['latitude'].mean(),
-            longitude=df['longitude'].mean(),
-            zoom=1,
-            pitch=50,
-        ),
-        layers=[
-            pdk.Layer(
-                'ScatterplotLayer',
-                data=df,
-                get_position='[longitude, latitude]',
-                get_radius=100000,
-                get_color=[255, 0, 0],
-                pickable=True,
-            ),
-        ],
-    ))
-    '''
+
 
 elif page == 'Professional milestons':
     st.subheader('Working experience')
