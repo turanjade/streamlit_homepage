@@ -84,7 +84,7 @@ if page == "Home":
         with col2:
             st.header("_Heart healing trip to the Northeastern province of China, Heilongjiang (Aug-03-2024)_")
             st.write("An annual breakdown with my beloved friends. This year, we went to Heilongjiang Province, Northeast of China. \n Here are magnificent photos taken by Jing.")
-            st.image('/Users/ran/weiyun_sycn/5_Github/learngit/streamlit_homepage/Photos/Heilongjiang/luyuan.jpg', caption = 'Feed land of deer', use_column_width = T)
+            st.image('/Users/ran/weiyun_sycn/5_Github/learngit/streamlit_homepage/Photos/Heilongjiang/luyuan.jpg', caption = 'Feed land of deer', use_column_width=True)
     with st.container():
         # Create columns in the first container
         col1, col2 = st.columns(2)
