@@ -163,7 +163,7 @@ elif page == 'Publications':
     st.subheader('Publication')
     st.success("More papers, check my [ResearchGate](%s), or [GoogleScholar](%s)" % (url_rg, url_gs))
     st.write('(Updated in Aug-2024: 50+ peer-reviewed articles, 855 citations, h-index: 18)')
-    with st.expander('**Behavior analysis**'):
+    with st.expander('**_Behavior analysis_**'):
         st.write('Xu, J., R. Tu, U. Ahmed, G. Amirjamshidi, M. Hatzopoulou, and M. Roorda. How to Fairly Evaluate Eco-Driving? An Eco-Score System Developed Using Vehicle Characteristics and Traffic Conditions. 2021.')
         st.write('Xu, J., R. Tu, U. Ahmed, G. Amirjamshidi, M. Hatzopoulou, and M. J. Roorda. An Eco-Score System Incorporating Driving Behavior, Vehicle Characteristics, and Traffic Conditions. Transportation Research Part D: Transport and Environment, Vol. 95, 2021, p. 102866. https://doi.org/10.1016/j.trd.2021.102866.')
         st.write('Tu, R., J. Xu, T. Li, and H. Chen. Effective and Acceptable Eco-Driving Guidance for Human-Driving Vehicles: A Review. International journal of environmental research and public health, Vol. 19, No. 12, 2022, p. 7310.')
@@ -175,7 +175,7 @@ elif page == 'Publications':
         st.write('Wang, J., C. Huang, W. Xie, D. He, and R. Tu. Rethink Data-Driven Human Behavior Prediction: A Psychology-Powered Explainable Neural Network. Computers in Human Behavior, Vol. 156, 2024, p. 108245.')
         st.write('Chen, R., S. Xu, Y. Du, Y. Wu, S. Zhao, R. Tu, and C. Wu. Carbon Generalized System of Preferences (CGSP) Programs: Key Design Dimensions and Attitudes of Potential Participants. Case Studies on Transport Policy, Vol. 16, 2024, p. 101205.')
         st.write('Xu, Z., Z. Zheng, D. Xiao, R. Tu, W. Ma, and N. Zheng. Assessing the Impact of Passenger Compliance Behavior in CAVs on Environmental Benefits. Transportation Research Part D: Transport and Environment, Vol. 133, 2024, p. 104278.')
-    with st.expander('**Control & optimization**'):
+    with st.expander('**_Control & optimization_**'):
         st.write('Dong, N., T. Li, S. Xu, R. Tu, H. Chen, and Y. Li. Capacity of Right-Turn Lane Affected by Bicycles during Red Phase. In CICTP 2023, pp. 1978–1987.')
         st.write('Tu, R. Network-Wide Assessment of Eco-Cooperative Adaptive Cruise Control Systems on Freeway and Arterial Facilities. Virginia Tech, 2016.')
         st.write('Tu, R., J. Du, H. A. Rakha, and H. Yang. System-Wide Impacts of Arterial and Freeway Eco-Cooperative Adaptive Cruise Control. 2017.')
@@ -190,7 +190,7 @@ elif page == 'Publications':
         st.write('Chen, Q., C. Niu, R. Tu, T. Li, A. Wang, and D. He. Cost-Effective Electric Bus Resource Assignment Based on Optimized Charging and Decision Robustness. Transportation Research Part D: Transport and Environment, Vol. 118, 2023, p. 103724.')
         st.write('Dong, N., T. Li, T. Liu, R. Tu, F. Lin, H. Liu, and Y. Bo. A Method for Short-Term Passenger Flow Prediction in Urban Rail Transit Based on Deep Learning. Multimedia Tools and Applications, Vol. 83, No. 22, 2024, pp. 61621–61643.')
         st.write('Niu, C., Q. Chen, R. Tu, D. Huang, and Y. Ye. Co-Optimizing Electric Bus Dispatching and Charging Considering Limited Resources and Battery Degradation. Multimodal Transportation, 2024, p. 100165.')
-    with st.expander('Emission & air quality'):
+    with st.expander('**_Emission & air quality_**'):
         st.write('Margaritis, D., N. Dimokas, A. Dimitriadis--CERTH, Y. Li--DYNNOTEQ, T. Li, R. Tu, B. Liang, E. Özatay, O. Alanku\cs--OKAN, S. Faye, and others. MODALES D4. 2: Recommendations for Anti-Tampering and an Improved Mandatory Vehicle Inspection. ')
         st.write('Tu, R., I. Kamel, A. Wang, B. Abdulhai, and M. Hatzopoulou. Development of a Hybrid Modelling Approach for the Generation of an Urban On-Road Transportation Emission Inventory. Transportation Research Part D: Transport and Environment, Vol. 62, 2018. https://doi.org/10.1016/j.trd.2018.04.011.')
         st.write('Xu, J., R. Tu, A. Wang, L. Minet, C. Stogios, M. Saleh, N. Hilker, J. Wang, G. Evans, M. Hatzopoulou, A. Chemistry, J. Wang, A. Chemistry, G. Evans, and A. Chemistry. Quantifying the Contribution of Diesel Vehicles to Traffic Emissions Along an Urban Corridor: Implications for Cleaner Public Transit. The 97th Transportation Research Board Annual Meeting, 2018.')
@@ -229,5 +229,3 @@ elif page == 'Publications':
         st.write('Zhang, L., J. Wei, and R. Tu. Temporal-Spatial Analysis of Transportation CO2 Emissions in China: Clustering and Policy Recommendations. Heliyon, Vol. 10, No. 2, 2024.')
         st.write('Tu, H., L. Zhao, R. Tu, and H. Li. The Energy-Saving Effect of Early-Stage Autonomous Vehicles: A Case Study and Recommendations in a Metropolitan Area. Energy, Vol. 297, 2024, p. 131274.')
         st.write('Wang, S., T. Qin, R. Tu, T. Li, G. I. Chen, D. C. Green, X. Zhang, J. Feng, H. Liu, M. Hu, and others. Indoor Air Quality in Subway Microenvironments: Pollutant Characteristics, Adverse Health Impacts, and Population Inequity. Environment International, Vol. 190, 2024, p. 108873.')
-
-        
