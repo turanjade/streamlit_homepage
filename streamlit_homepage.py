@@ -163,8 +163,18 @@ elif page == 'Publications':
     st.subheader('Publication')
     st.success("More papers, check my [ResearchGate](%s), or [GoogleScholar](%s)" % (url_rg, url_gs))
     st.write('(Updated in Aug-2024: 50+ peer-reviewed articles, 855 citations, h-index: 18)')
-    with st.expander('Electric-vehicle related'):
-        st.write('')
+    with st.expander('Behavior analysis'):
+        st.write('Xu, J., R. Tu, U. Ahmed, G. Amirjamshidi, M. Hatzopoulou, and M. Roorda. How to Fairly Evaluate Eco-Driving? An Eco-Score System Developed Using Vehicle Characteristics and Traffic Conditions. 2021.')
+        st.write('Xu, J., R. Tu, U. Ahmed, G. Amirjamshidi, M. Hatzopoulou, and M. J. Roorda. An Eco-Score System Incorporating Driving Behavior, Vehicle Characteristics, and Traffic Conditions. Transportation Research Part D: Transport and Environment, Vol. 95, 2021, p. 102866. https://doi.org/10.1016/j.trd.2021.102866.')
+        st.write('Tu, R., J. Xu, T. Li, and H. Chen. Effective and Acceptable Eco-Driving Guidance for Human-Driving Vehicles: A Review. International journal of environmental research and public health, Vol. 19, No. 12, 2022, p. 7310.')
+        st.write('Wang, J., C. Huang, D. He, and R. Tu. Range Anxiety Among Battery Electric Vehicle Users: Both Distance and Waiting Time Matter. arXiv preprint arXiv:2306.05768, 2023.')
+        st.write('Ahmed, U., R. Tu, J. Xu, G. Amirjamshidi, M. Hatzopoulou, and M. J. Roorda. GPS-Based Traffic Conditions Classification Using Machine Learning Approaches. Transportation research record, Vol. 2677, No. 2, 2023, pp. 1445–1454.')
+        st.write('Wang, J., C. Huang, R. Tu, and D. He. Influential Factors of Users’ Trust in the Range Estimation Systems of Battery Electric Vehicles–A Survey Study in China. arXiv preprint arXiv:2301.10076, 2023.')
+        st.write('Chen, Y., Z. Qian, S. Zhao, R. Tu, and C. Wu. Incentive Mechanism Design of “Mobility as a Service” for Carbon Emission Reduction. 2023.')
+        st.write('Wang, J., R. Tu, A. Wang, and D. He. Trust in Range Estimation System in Battery Electric Vehicles--A Mixed Approach. IEEE Transactions on Human-Machine Systems, 2024.')
+        st.write('Wang, J., C. Huang, W. Xie, D. He, and R. Tu. Rethink Data-Driven Human Behavior Prediction: A Psychology-Powered Explainable Neural Network. Computers in Human Behavior, Vol. 156, 2024, p. 108245.')
+        st.write('Chen, R., S. Xu, Y. Du, Y. Wu, S. Zhao, R. Tu, and C. Wu. Carbon Generalized System of Preferences (CGSP) Programs: Key Design Dimensions and Attitudes of Potential Participants. Case Studies on Transport Policy, Vol. 16, 2024, p. 101205.')
+        st.write('Xu, Z., Z. Zheng, D. Xiao, R. Tu, W. Ma, and N. Zheng. Assessing the Impact of Passenger Compliance Behavior in CAVs on Environmental Benefits. Transportation Research Part D: Transport and Environment, Vol. 133, 2024, p. 104278.')
     with st.expander('Emission & Air quality related'):
         st.write('')
     with st.expander('Behavior analysis related'):
