@@ -82,9 +82,9 @@ if page == "Home":
             st.write("Starting from Aug 16, I will be visiting the Department of Chemical Engineering and Applied Chemistry at the University of Toronto. Hopefully, this visiting will bring much new ideas on the travel-related environmental and social impact and mitigation practices from a different perspective")
 
         with col2:
-            st.header("_Heart healing trip to the Northeastern province of China, Heilongjiang (Aug-03-20204)_")
-            st.write("An annual breakdown with my beloved friends. This year, we went to Heilongjiang Province, Northeast of China.")
-
+            st.header("_Heart healing trip to the Northeastern province of China, Heilongjiang (Aug-03-2024)_")
+            st.write("An annual breakdown with my beloved friends. This year, we went to Heilongjiang Province, Northeast of China. \n Here are magnificent photos taken by Jing.")
+            st.image('https://drive.google.com/file/d/1aXP-Ccj-WF3bCrqIYMDi1JNmNtUqwLvW/view?usp=drive_link', caption = 'Enjoying the sunset', use_column_width = T)
     with st.container():
         # Create columns in the first container
         col1, col2 = st.columns(2)
