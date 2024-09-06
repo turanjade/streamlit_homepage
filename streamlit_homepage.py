@@ -175,7 +175,20 @@ elif page == 'Publications':
         st.write('Wang, J., C. Huang, W. Xie, D. He, and R. Tu. Rethink Data-Driven Human Behavior Prediction: A Psychology-Powered Explainable Neural Network. Computers in Human Behavior, Vol. 156, 2024, p. 108245.')
         st.write('Chen, R., S. Xu, Y. Du, Y. Wu, S. Zhao, R. Tu, and C. Wu. Carbon Generalized System of Preferences (CGSP) Programs: Key Design Dimensions and Attitudes of Potential Participants. Case Studies on Transport Policy, Vol. 16, 2024, p. 101205.')
         st.write('Xu, Z., Z. Zheng, D. Xiao, R. Tu, W. Ma, and N. Zheng. Assessing the Impact of Passenger Compliance Behavior in CAVs on Environmental Benefits. Transportation Research Part D: Transport and Environment, Vol. 133, 2024, p. 104278.')
-    with st.expander('Emission & Air quality related'):
-        st.write('')
-    with st.expander('Behavior analysis related'):
+    with st.expander('Control & optimization'):
+        st.write('Dong, N., T. Li, S. Xu, R. Tu, H. Chen, and Y. Li. Capacity of Right-Turn Lane Affected by Bicycles during Red Phase. In CICTP 2023, pp. 1978–1987.')
+        st.write('Tu, R. Network-Wide Assessment of Eco-Cooperative Adaptive Cruise Control Systems on Freeway and Arterial Facilities. Virginia Tech, 2016.')
+        st.write('Tu, R., J. Du, H. A. Rakha, and H. Yang. System-Wide Impacts of Arterial and Freeway Eco-Cooperative Adaptive Cruise Control. 2017.')
+        st.write('Alfaseeh, L., S. Djavadian, R. Tu, B. Farooq, and M. Hatzopoulou. Multi-Objective Eco-Routing in a Distributed Routing Framework. 2019.')
+        st.write('Nan, S., L. Yan, R. Tu, and T. Li. Modeling Lane-Transgressing Behavior of e-Bike Riders on Road Sections with Marked Bike Lanes: A Survival Analysis Approach. Traffic injury prevention, Vol. 22, No. 2, 2020, pp. 153–157.')
+        st.write('Tu, R., Y. (Jessie) Gai, B. Farooq, D. Posen, and M. Hatzopoulou. Electric Vehicle Charging Optimization to Minimize Marginal Greenhouse Gas Emissions from Power Generation. Applied Energy, Vol. 277, 2020, p. 115517. https://doi.org/10.1016/j.apenergy.2020.115517.')
+        st.write('Djavadian, S., R. Tu, B. Farooq, and M. Hatzopoulou. Multi-Objective Eco-Routing for Dynamic Control of Connected \& Automated Vehicles. Transportation Research Part D: Transport and Environment, Vol. 87, 2020, p. 102513. https://doi.org/10.1016/j.trd.2020.102513.')
+        st.write('Zhang, A., T. Li, R. Tu, C. Dong, H. Chen, J. Gao, and Y. Liu. The Effect of Nonlinear Charging Function and Line Change Constraints on Electric Bus Scheduling. Promet-Traffic&Transportation, Vol. 33, No. 4, 2021, pp. 527–538.')
+        st.write('Su, Y., A. Zhang, T. Li, Q. Chen, J. Sun, and R. Tu. Optimizing the Charging Plan and Fleet Size of Electric Buses with Energy Consumption Variations. 2022.')
+        st.write('Huang, P., R. Tu, X. Zhang, M. Han, Y. Sun, S. A. Hussain, and L. Zhang. Investigation of Electric Vehicle Smart Charging Characteristics on the Power Regulation Performance in Solar Powered Building Communities and Battery Degradation in Sweden. Journal of Energy Storage, Vol. 56, 2022, p. 105907.')
+        st.write('Dong, C., Y. Li, H. Wang, R. Tu, Y. Chen, D. Ni, and Y. Liu. Lane-Changing Trajectory Control Strategy on Fuel Consumption in an Iterative Learning Framework. Expert Systems with Applications, Vol. 228, 2023, p. 120251.')
+        st.write('Chen, Q., C. Niu, R. Tu, T. Li, A. Wang, and D. He. Cost-Effective Electric Bus Resource Assignment Based on Optimized Charging and Decision Robustness. Transportation Research Part D: Transport and Environment, Vol. 118, 2023, p. 103724.')
+        st.write('Dong, N., T. Li, T. Liu, R. Tu, F. Lin, H. Liu, and Y. Bo. A Method for Short-Term Passenger Flow Prediction in Urban Rail Transit Based on Deep Learning. Multimedia Tools and Applications, Vol. 83, No. 22, 2024, pp. 61621–61643.')
+        st.write('Niu, C., Q. Chen, R. Tu, D. Huang, and Y. Ye. Co-Optimizing Electric Bus Dispatching and Charging Considering Limited Resources and Battery Degradation. Multimodal Transportation, 2024, p. 100165.')
+    with st.expander('Emission & air quality'):
         st.write('')
