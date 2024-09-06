@@ -83,14 +83,17 @@ if page == "Home":
 
         with col2:
             st.header("_Heart healing trip to the Northeastern province of China, Heilongjiang (Aug-03-2024)_")
-            st.write("An annual breakdown with my beloved friends. This year, we went to Heilongjiang Province, Northeast of China. \n Here are magnificent photos taken by Jing.")
-            st.image('/Users/ran/weiyun_sycn/5_Github/learngit/streamlit_homepage/Photos/Heilongjiang/luyuan.jpg', caption = 'Feed land of deer', use_column_width=True)
+            st.write("An annual breakdown with my beloved friends. This year, we went to Heilongjiang Province, Northeast of China.")
+            #st.image('/Users/ran/weiyun_sycn/5_Github/learngit/streamlit_homepage/Photos/Heilongjiang/luyuan.jpg', caption = 'Feed land of deer', use_column_width=True)
+
     with st.container():
         # Create columns in the first container
         col1, col2 = st.columns(2)
         with col1:
             st.header("_Annual TRB KPI completed! (Aug-01-2024)_")
             st.write("Our TreesLab members have successfully submitted their papers to the TRBAM. Shout out to the magnificent work of Yanfeng, Qiuzi, Shan, and Suyang!")
+            #st.image
+
         with col2:
             st.header("_An in-depth communication with Austria-based NGO IIASA (Jul-17-2024)_")
             st.write("Sponsored by the NSFC-funded international collaboration project, Decarbonization of Residents Life Behavior, we traveled to Vienna, Austria, and had a talk at the IIASA. MaaS business, travelers' behavior analysis, and influencing factors were discussed.")
