@@ -7,6 +7,9 @@ import numpy as np
 import requests
 import pydeck as pdk
 import pandas as pd
+import mysql.connector
+from mysql.connector import Error
+import openai
 
 
 url_rg = "https://www.researchgate.net/profile/Ran-Tu-3"
